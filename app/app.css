@@ -1,12 +1,28 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/FiraCode-Regular.woff2') format('woff2'),
+       url('/fonts/FiraCode-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/FiraCode-Bold.woff2') format('woff2'),
+       url('/fonts/FiraCode-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Fira Code", monospace;
 }
 
 html,
 body {
+  font-family: 'Fira Code', monospace;
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
