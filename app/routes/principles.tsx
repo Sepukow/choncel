@@ -5,7 +5,7 @@ export function meta({ }: any) {
     ];
   }
   
-  export default function Books() {
+  export default function Principles() {
     return (
       <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-8">
         Principles

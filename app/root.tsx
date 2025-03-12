@@ -6,11 +6,10 @@ import {
   ScrollRestoration,
 } from "react-router";
 
-import Nav from './components/nav'
+import Nav from './components/nav';
 import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
-
   return (
     <html lang="en">
       <head>
@@ -20,18 +19,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <div className="flex min-h-screen">
-          <div className="flex-1 p-6 sm:p-8 md:p-12 lg:p-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        <div className="flex flex-row min-h-screen">
+
+          <div className="flex-1 p-4 sm:p-6 md:p-8 lg:p-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               Hey, I'm Bartek
             </h1>
 
-            {children}
+            <Outlet />
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-6 sm:mt-8">
               Bartek
             </h2>
           </div>
+
           <Nav />
         </div>
         <ScrollRestoration />
@@ -44,4 +45,3 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return <Outlet />;
 }
-
