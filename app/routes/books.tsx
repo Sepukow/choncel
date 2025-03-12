@@ -1,16 +1,14 @@
-import type { Route } from "./+types/home";
+export function meta({ }: any) {
+    return [
+      { title: "Bartłomiej Choncel - books" },
+      { name: "description", content: "Welcome to my website!" },
+    ];
+  }
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Bartłomiej Choncel - books" },
-    { name: "description", content: "Welcome to my website!" },
-  ];
-}
-
-export default function Books() {
-  return (
-    <div>
-      <h1>Books</h1>
-    </div>
-  );
+  export default function Books() {
+    return (
+      <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-8">
+        Books
+      </p>
+    );
 }
