@@ -7,7 +7,7 @@ export function meta({ }: any) {
   
   export default function Media() {
     return (
-      <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-8">
+      <p className="text-base sm:text-basic md:text-baisc leading-relaxed mb-8">
         Media
       </p>
     );

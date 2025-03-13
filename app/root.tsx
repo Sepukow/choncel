@@ -14,10 +14,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
 
   const pathToTitle = {
-    "/principles": ".Principles",
-    "/books": ".Books",
-    "/projects": ".Projects",
-    "/media": ".Media",
+    "/principles": "/Principles",
+    "/books": "/Books",
+    "/projects": "/Projects",
+    "/media": "/Media",
   };
 
   const locationTitle = pathToTitle[location.pathname] || "";
@@ -31,11 +31,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <div className="flex flex-row min-h-screen px-4 sm:px-4 md:px-16 lg:px-32">
-          <div className="flex-1 p-4 sm:p-6 md:p-8 lg:p-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">
-              {location.pathname === "/" && "Hey, I'm "}
-              Bartek<span style={{ color: '#8977FF' }}>{locationTitle}</span>
+        <div className="flex flex-row min-h-screen justify-center" style={{ marginLeft: '5vw', marginRight: '5vw' }}>
+          <div className="flex-1 p-4 max-w-[640px]">
+            <h1 className="text-3xl mb-4">
+              {location.pathname === "/" && (
+                  <>
+                    <span style={{ color: '#8977FF' }}>Hey</span>, I'm 
+                  </> )
+              }
+              {" "}Bartek<span style={{ color: '#8977FF' }}>{locationTitle}</span>
             </h1>
 
             <Outlet />
