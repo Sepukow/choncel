@@ -4,12 +4,24 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLocation,
 } from "react-router";
 
 import Nav from './components/nav';
 import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const location = useLocation();
+
+  const pathToTitle = {
+    "/principles": ".Principles",
+    "/books": ".Books",
+    "/projects": ".Projects",
+    "/media": ".Media",
+  };
+
+  const locationTitle = pathToTitle[location.pathname] || "";
+
   return (
     <html lang="en">
       <head>
@@ -19,20 +31,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <div className="flex flex-row min-h-screen">
-
+        <div className="flex flex-row min-h-screen px-4 sm:px-4 md:px-16 lg:px-32">
           <div className="flex-1 p-4 sm:p-6 md:p-8 lg:p-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-              Hey, I'm Bartek
+            <h1 className="text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6">
+              {location.pathname === "/" && "Hey, I'm "}
+              Bartek<span style={{ color: '#8977FF' }}>{locationTitle}</span>
             </h1>
 
             <Outlet />
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-6 sm:mt-8">
-              Bartek
-            </h2>
           </div>
-
           <Nav />
         </div>
         <ScrollRestoration />
