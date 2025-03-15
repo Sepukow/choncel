@@ -8,19 +8,21 @@ export function meta({ }: any) {
 export default function Home() {
   return (
     <p className="text-sm sm:text-sm md:text-sm leading-relaxed mb-8">
-      I’ve been reading, listening, thinking, building, and creating on the internet since 2008.
-      Currently working on my résumé and trying to digitize myself into the internet (project: Exegi monumentum).
+      I’ve been exploring the internet since 2008 — reading, listening, thinking, building, and creating all sorts of things. 
+      Right now, I’m working on my résumé and a personal project I call Exegi monumentum, where I’m trying to leave my digital mark on the world. 
+      You’re actually looking at a part of it right now! 
+      Here’s a little sneak peek: 
+      I’m also dreaming up a future project  - a construct rooted in machine learning, a testament to my evolving ideas and aspirations.
       <br /><br />
-      On a daily basis, I work as an IT Solution Expert and continuously enhance my skills, aiming to become an IT Architect/IT Project Manager in the future.
+      During the day, I work as an IT Solution Expert, and I’m always learning new things to grow into roles like IT Architect or IT Project Manager someday.
       <br /><br />
-      My areas of interest include automation, automotive, space and geopolitics. From time to time I like to take some{" "}
-      <a href="/media" className="text-[#8977FF] hover:text-white underline">photos and videos</a>.
+      I’m really passionate about a few big topics: automotive with elements of motorsport(F1), the mysteries of space, and how geopolitics shapes the world. These things keep me curious and excited about what’s coming next.
       <br /><br />
-      At the moment, I am constantly working on completing my window to the world, which is the website you are currently on.
+      Over the years, I’ve helped companies connect the dots between business and tech, working with great teams at places like Futunext, ABB, and Philip Morris International.
       <br /><br />
-      Through the years, I have helped some companies understand the connection between business and tech at companies like: Futunext, ABB and Philip Morris International.
-      <br /><br />
-      Here are some principles I believe in and some books I read.
+      Here are some{" "}
+      <a href="/principles" className="text-[#8977FF] hover:text-white underline">principles</a> I believe in and some{" "}
+      <a href="/books" className="text-[#8977FF] hover:text-white underline">books</a> I read.
     </p>
   );
 }
