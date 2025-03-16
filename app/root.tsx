@@ -31,7 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <div className="flex flex-row min-h-screen justify-center" style={{ marginLeft: '30vw', marginRight: '30vw' }}>
+        <div className="flex flex-row min-h-screen justify-center" style={{ marginLeft: '25vw', marginRight: '25vw' }}>
           <div className="flex-1 p-4 max-w-[640px] pt-12">
             <h1 className="text-2xl mb-4">
               {location.pathname === "/" && (

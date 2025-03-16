@@ -4,7 +4,7 @@ export default function Nav() {
   const location = useLocation();
 
   return (
-    <div className="w-32 bg-[#292627] p-4 ml-8">
+    <div className="w-29 bg-[#292627] p-4">
       <nav className="pt-8">
         <ul className="space-y-0 text-right">
           <li>

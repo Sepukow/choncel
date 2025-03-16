@@ -7,7 +7,7 @@ export function meta({ }: any) {
 
 export default function Home() {
   return (
-    <div className="text-sm sm:text-sm md:text-sm leading-relaxed mb-8">
+    <div className="text-sm sm:text-sm md:text-sm mr-5">
       <p>
         I’ve been exploring the internet since 2008 — reading, listening, thinking, building, and creating all sorts of things.
       </p>
