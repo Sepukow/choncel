@@ -23,11 +23,38 @@ export default function Home() {
         During the day, I work as an IT Solution Expert, and I’m always learning new things to grow into IT Project Manager someday.
       </p>
       <p className="mt-4">
-        I’m really passionate about a few big topics: automotive with elements of motorsport(F1), the mysteries of space, and how geopolitics shapes the world. These things keep me curious and excited about what’s coming next.
+        I’m really passionate about a few big topics: automotive with elements of motorsport, the mysteries of space, and how geopolitics shapes the world. These things keep me curious and excited about what’s coming next.
       </p>
       <p className="mt-4">
-        Over the years, I’ve helped companies connect the dots between business and tech, working with great teams at places like Futunext, ABB, and Philip Morris International.
+        Over the years, I’ve helped companies connect the dots between business and tech, working with great teams at places like:
       </p>
+      <button
+        onClick={() => window.open("https://futunext.com", "_blank")}
+        className="inline-block align-middle border border-gray-400 p-1 mt-2 rounded-sm hover:bg-zinc-700 transition duration-300">
+        <img
+          src="./assets/futunext-logo.png"
+          alt="Futunext Logo"
+          className="h-5 inline-block"
+        />
+      </button>{" "}
+      <button
+        onClick={() => window.open("https://abb.com", "_blank")}
+        className="inline-block align-middle border border-gray-400 p-1 mt-2 rounded-sm hover:bg-zinc-700 transition duration-300">
+        <img
+          src="./assets/abb-logo.png"
+          alt="ABB Logo"
+          className="h-5 inline-block"
+        />
+      </button>{" "}
+      <button
+        onClick={() => window.open("https://pmi.com", "_blank")}
+        className="inline-block align-middle border border-gray-400 p-1 mt-2 rounded-sm hover:bg-zinc-700 transition duration-300">
+        <img
+          src="./assets/pmi-logo.png"
+          alt="PMI Logo"
+          className="h-5 inline-block"
+        />
+</button>{" "}
       <p className="mt-4">
         Here are some{" "}
         <a href="/principles" className="text-[#8977FF] hover:text-white underline">principles</a> I believe in and some{" "}
