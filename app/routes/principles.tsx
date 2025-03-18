@@ -7,9 +7,9 @@ export function meta({ }: any) {
 
 export default function Principles() {
   return (
-    <div className="text-sm sm:text-sm md:text-sm leading-relaxed mb-8">
+    <div className="text-sm sm:text-sm md:text-sm leading-relaxed mb-8" >
       <p>
-        Prīncipium. From the Latin prīncipium, “beginning, foundation.” 
+        <i>Prīncipium. </i> From the Latin <i>prīncipium</i> means “beginning, foundation.” 
         A fundamental truth or proposition that serves as the basis for a belief system, behavior or chain of reasoning.
       </p>
       <br></br>
