@@ -20,7 +20,7 @@ export default function Home() {
         I’m also dreaming up a future project - a construct rooted in machine learning, a testament to my evolving ideas and aspirations.
       </p>
       <p className="mt-4">
-        During the day, I work as an IT Solution Expert, and I’m always learning new things to grow into IT Project Manager someday.
+        During the day, I work as an IT Solution Expert, spending time with my 2 cats, Artiom and Misha and I’m learning new things to grow into IT Project Manager someday.
       </p>
       <p className="mt-4">
         I’m really passionate about a few big topics: automotive with elements of motorsport, the mysteries of space, and how geopolitics shapes the world. These things keep me curious and excited about what’s coming next.
@@ -56,7 +56,7 @@ export default function Home() {
         />
 </button>{" "}
       <p className="mt-4">
-        Here are some{" "}
+        Oh, and here are some{" "}
         <a href="/principles" className="text-[#8977FF] hover:text-white underline">principles</a> I believe in and some{" "}
         <a href="/books" className="text-[#8977FF] hover:text-white underline">books</a> I read.
       </p>

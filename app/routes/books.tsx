@@ -16,13 +16,7 @@ export default function Books() {
         Here is a list of books I think are good to recommend:
       </p>
       <ul className="list-inside mt-4 space-y-2 custom-list">
-        <li>Leviathan Wakes - James S.A. Corey</li>
-        <li>Caliban’s War - James S.A. Corey</li>
-        <li>Abaddon’s Gate - James S.A. Corey</li>
-        <li>Cibola Burn - James S.A. Corey</li>
-        <li>Nemesis Games - James S.A. Corey</li>
-        <li>Babylon’s Ashes - James S.A. Corey</li>
-        <li>Persepolis Rising - James S.A. Corey</li>
+        <li>The Expanse Series - James S.A. Corey</li>
         <li>The Stand - Stephen King</li>
         <li>1984 - George Orwell</li>
         <li>Metro 2033 - Dmitry Glukhovsky</li>
@@ -35,6 +29,13 @@ export default function Books() {
         {`
           .custom-list {
             list-style-type: none; /* Usuwamy domyślne punktory */
+          }
+            .custom-list li {
+            counter-increment: list-counter;
+            margin-bottom: 1rem;
+            list-style-type: none;
+            position: relative;
+            padding-left: 0.75rem;
           }
           .custom-list li::before {
             content: "•"; /* Dodajemy punktor */
